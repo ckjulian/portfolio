@@ -1,0 +1,87 @@
+/* 滑動式消息*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* 前、後按鈕 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    /* margin-top: -22px; */
+    padding: 90px 16px 90px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 30px 30px 0;
+    user-select: none;
+}
+/* 另外設定 按鈕(放右邊) */
+.next {
+    right: 0;
+    border-radius: 30px 0 0 30px;
+}
+/* 按鈕滑鼠浮過 */
+.prev:hover, .next:hover {
+    background-color: rgba(175, 183, 217,0.8);
+}
+/* 底部文字 */
+.text {
+    color:black ;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    /* 檢查用 */
+    /* border: 5px solid red; */
+}
+/* 右上角 標示 1-4 */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right:0;
+    /* 檢查用 */
+    /* border: 5px solid red; */
+}
+/* 底部圓點 */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(175, 183, 217);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /* 檢查用 */
+    /* border: 5px solid red; */
+}
+.active, .dot:hover {
+    background-color: yellow;
+}
+/* 換張的動畫 */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+/* 變化過度的畫面 (從未透明變成不透明) */
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+/* @media 是針對不同螢幕尺寸 設置不同的樣式 */
+/* @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+} */

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/htmlstyle.css">
+    <link rel="stylesheet" href="./CSS/slideshow.css">
+    <link rel="stylesheet" href="./CSS/fourchoose.css">
+    <link rel="stylesheet" href="./CSS/product.css">
+
+    <!-- Footer CSS icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- FB -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0" nonce="gMzzLSfB"></script>
+    <title>正昌電器行 - 冰箱</title>
+</head>
+<body>
+    <!-- 頂部 -->
+    <header>
+        <h1>挑選適合自己的產品</h1>
+        <p style="font-size: 30px;">細節，才是我們注重的</p>
+    </header>
+    <!-- 導覽列 -->
+    <nav class="" id="myNav">
+        <!-- 正昌圖示 -->
+        <div class="logo">
+            <a href="./zcshop.html"><img src="./IMG/zcimg.png">
+            </a>
+        </div>
+        <!-- 搜尋欄 -->
+        <!-- <div class="search">
+            <input class="search_text" type="search" placeholder="輸入商品名稱">
+            <input class="search_button" type="button" name="" value="search...">
+        </div> -->
+        <!-- 中間選單 -->
+        <div class="menu">
+            <a href="./about.html">關於ZC</a>
+            <a href="./tv.html">電視</a>
+            <a href="./refrigerator.html">冰箱</a>
+            <a href="./airconditioner.html">冷氣</a>
+            <a href="./washingmachine.html">洗衣機</a>
+            <a href="./open.html">產品開箱</a>
+            <a href="./youknow.html">環境照</a>  
+        </div> 
+    </nav>
+    <!-- 全部內文 -->
+    <div class="row">
+        <!-- 側邊欄 -->
+        <aside>
+            <h3>快速移動</h3>
+        <div>
+            <p><a href="#area1">入門款</a></p>
+            <p><a href="#area2">CP值款</a></p>
+            <p><a href="#area3">旗艦款</a></p>
+            <p><a href="#area4">冷凍櫃</a></p>
+        </div>
+    </aside>
+        <!-- 產品 -->
+        <div id="divbrand">
+            <!-- 簡單介紹 -->
+            <div style="display: flex; position: relative; margin: 300px 0px 300px 0px ">
+                <img src="./IMG/panasonic.png" style="max-width: 50%;">
+                <article style="font-size: 20px;  margin-left: 40px;"><a href="https://www.panasonic.com/tw/" target="_blank">Panasonic 官網連結</a>
+                    <br>
+                    <br>
+                    Panansonic 松下
+                    <br><br>
+                    是源自日本的跨國電機製造商，也是日本前八大電機企業之一，總部位於大阪府門真市。美國《財富》雜誌「世界500強」評選排名第110位（2017年）。公司舊稱松下電器產業株式會社，於2008年改名，包含生產白色家電與居家用品的「國際牌」（National）在內，品牌於全世界同步改為「Panasonic」。由「Pan」（全部）與「Sonic」（聲音）組成，因其最初用於販售音訊設備。
+                </article>
+            </div>
+            <br>
+            <div style="text-align: center; margin: 0px 0px 300px 0px; position: relative;">
+                <video autoplay muted loop>
+                    <source src="./Video/panasonic.mp4">
+                </video>
+            </div>            
+            <br>
+            <!-- 商品欄位(有四個階級)-->
+            <!-- 入門 -->
+            <div id="area1">
+                <!-- 小標題 -->
+                <div class="productrange">入門款~~推薦給想嘗鮮的人</div>
+                <!-- 商品列 -->
+                <div>
+                    <ul id="setflex">
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/nr-b271tv.png" alt=""></figure>
+                                        <!-- 商品價格 or 簡易文宣 -->
+                                        <div class="priceandmoney">
+                                        <p>NR-B271TV</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/nr-b421tv.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-B421TV</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- CP值 -->
+            <div id="area2">
+                <!-- 小標題 -->
+                <div class="productrange">CP值款~~推薦給精打細算的人</div>
+                <!-- 商品列 -->
+                <div>
+                    <ul id="setflex">
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-C479HV.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-C479HV</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-C493TV.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-C493TV</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 旗艦 -->
+            <div id="area3">
+                <!-- 小標題 -->
+                <div class="productrange">旗艦款~~推薦給注重細節的人</div>
+                <!-- 商品列 -->
+                <div>
+                    <ul id="setflex">
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-F557HX.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-F557HX</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>                        
+                            </div>
+                        </li>
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-F658WX.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-F658WX</p>
+                                        <p>$ 90,000</p>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 配件 -->
+            <div id="area4">
+                <!-- 小標題 -->
+                <div class="productrange">冷凍櫃</div>
+                <!-- 商品列 -->
+                <div>
+                    <ul id="setflex">
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-FC203-W.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-FC203-W</p>
+                                        <p>$ 80,000</p>
+                                    </div> 
+                                </a>
+                                
+                            </div>
+                        </li>
+                        <li id="productli">
+                            <div class="oneproductsize">
+                                <a href="商品頁面">
+                                    <!-- 商品圖片 -->
+                                    <figure><img src="./IMG/NR-FZ383AV-S.png" alt=""></figure>
+                                    <!-- 商品價格 or 簡易文宣 -->
+                                    <div>
+                                        <p>NR-FZ383AV-S</p>
+                                        <p>$ 80,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 回到最上層 -->
+    <a href="#" class="gototop"></a>
+    
+    <!-- 底部 -->
+    <footer style="align-items: self-start">
+        <div>
+            <h4 style="border-bottom: 3px solid gray;">網站地圖</h4>
+            <ul style="list-style: none;">
+                <li><a href="./about.html">關於ZC</a></li>
+                <li><a href="./tv.html">電視</a></li>
+                <li><a href="./refrigerator.html">冰箱</a></li>
+                <li><a href="./airconditioner.html">冷氣</a></li>
+                <li><a href="./open.html">產品開箱</a></li>
+                <li><a href="./yonknow.html">環境照</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="border-bottom: 3px solid gray;">聯絡資訊</h4>
+            <div>
+                <ul style="list-style: none;">
+                    <li>正昌電器股份有限公司</li>
+                    <br>
+                    <li><a href="https://www.google.com/maps/place/%E6%AD%A3%E6%98%8C%E9%9B%BB%E5%99%A8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.1255939,120.71263,17z/data=!3m1!4b1!4m6!3m5!1s0x346922cd370b2a37:0x61930023608416f5!8m2!3d24.1255939!4d120.71263!16s%2Fg%2F1pzq_c3w7?authuser=0" target="_blank">台中市太平區太平路575號</a></li>
+                    <li>電話：(04) 2278-0639</li>
+                    <li>傳真：(04) 2260-7321</li>
+                    <li>營業時間：(一) ~ (六) 10:00 ~ 21:00</li>
+                    <br>
+                    <a href="https://www.facebook.com/tpzc575" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/julian880316/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://youtube.com/@raekuo880316" target="_blank" class="fa fa-youtube"></a>
+                </ul>  
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- JS -->
+<script src="./JS/slideshow.js"></script>
+<script src="./JS/scrollsticky.js"></script>
+<script>
+    $( function() {
+        $('#open').tabs();
+    });
+</script>
+
+</html>
