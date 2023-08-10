@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/htmlstyle.css">
+    <link rel="stylesheet" href="CSS/slideshow.css">
+    <link rel="stylesheet" href="CSS/fourchoose.css">
+    <link rel="stylesheet" href="CSS/scam.css">
+
+    <!-- Footer CSS icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- FB -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0" nonce="gMzzLSfB"></script>
+    <title>正昌電器行</title>
+</head>
+<body>
+    <!-- 防詐騙1 提示 -->
+    <div id="overlay">
+        <span id="close-btn">&times;</span>
+        <img src="IMG/165.jpg" alt="提示圖片">
+    </div>
+    <!-- 頂部 -->
+    <header>
+        <h1>挑選適合自己的產品</h1>
+        <p style="font-size: 30px;">細節，才是我們注重的</p>
+    </header>
+    <!-- 導覽列 -->
+    <nav class="" id="myNav">
+        <!-- 正昌圖示 -->
+        <div class="logo">
+            <a href="zcshop.html"><img src="IMG/zcimg.png">
+            </a>
+        </div>
+        <!-- 搜尋欄 -->
+        <!-- <div class="search">
+            <input class="search_text" type="search" placeholder="輸入商品名稱">
+            <input class="search_button" type="button" name="" value="search...">
+        </div> -->
+        <!-- 中間選單 -->
+        <div class="menu">
+            <a href="about.html">關於ZC</a>
+            <a href="tv.html">電視</a>
+            <a href="refrigerator.html">冰箱</a>
+            <a href="airconditioner.html">冷氣</a>
+            <a href="washingmachine.html">洗衣機</a>
+            <a href="open.html">產品開箱</a>
+            <a href="youknow.html">環境照</a>  
+        </div> 
+    </nav>
+    <!-- 全部內文 -->
+    <div class="row">
+        <!-- 廣告空間 -->
+        <div class=" box1">
+            <div class="ad1">
+                <a href=""><img src="https://fakeimg.pl/200x450/" alt="廣告圖片1"></a>
+            </div>
+            <div class="ad2">
+                <a href=""><img src="https://fakeimg.pl/200x450/" alt="廣告圖片2"></a>
+            </div>
+        </div>
+        <!-- 側邊欄 -->
+        <aside>
+                <h3>快速移動</h3>
+            <div>
+                <p><a href="#gotobtn1">最新優惠</a></p>
+                <p><a href="#gotobtn2">購買專區</a></p>
+                <p><a href="#gotobtn3">產品開箱</a></p>
+                <p><a href="#gotobtn4">老闆日誌</a></p>
+            </div>
+        </aside>
+        <!-- 右內文 -->
+        <div class="main box2">
+            <!-- 1.最新消息 -->
+            <div id="gotobtn1">
+                <h2 class="area">最新優惠</h2>
+                <p class="area">廠商最新的優惠訊息都在這邊，記得每天都要來看一下</p>
+            </div>
+            <div class="slideshow-container">
+                <!-- 四張圖片-->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="IMG/photo1.jpg" style="width:100%">
+                <div class="text">Caption One</div>
+                </div>
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="IMG/photo2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="IMG/photo3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="IMG/photo4.jpg" style="width:100%">
+                <div class="text">Caption Four</div>
+                </div>
+                <!--前、後按鈕-->
+                <a class="prev" onclick="plusSlides(-1)" style="color: yellow;">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" style="color: yellow;">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <!-- 2.選單圖示化 -->
+            <div id="gotobtn2">
+                <h2 class="area">購買專區</h2>
+                <p class="area">小編已經先幫您分類好了~ 快速找到你要看的商品</p>
+            </div>
+            <div class="fourchoose">
+                <div class="twochoose">
+                    <div class="onechoose">
+                        <figure>
+                            <a href="tv.html"><img src="IMG/tv.png" alt="電視圖片"></a>
+                        </figure>
+                        <div class="namechoose">
+                            <h3>TV</h3>
+                            <p><a href="tv.html">電視</a></p>
+                        </div>
+                    </div>
+                    <div class="onechoose">
+                        <figure>
+                            <a href="washingmachine.html"><img src="IMG/washingmachine.png" alt="洗衣機圖片"></a>
+                        </figure>
+                        <div class="namechoose">
+                            <h3>WashingMachine</h3>
+                            <p><a href="washingmachine.html">洗衣機</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="twochoose">
+                    <div class="onechoose">
+                        <figure>
+                            <a href="refrigerator.html"><img src="IMG/refrigerator.png" alt="冰箱圖片"></a>
+                        </figure>
+                        <div class="namechoose">
+                            <h3>Refrigerator</h3>
+                            <p><a href="refrigerator.html">冰箱</a></p>
+                        </div>           
+                    </div>
+                    <div class="onechoose">
+                        <figure>
+                            <a href="airconditioner.html"><img src="IMG/airconditioner.png" alt="冷氣圖片"></a>
+                        </figure>
+                        <div class="namechoose">
+                            <h3>AirConditioner</h3>
+                            <p><a href="airconditioner.html">冷氣</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 開箱文 -->
+            <div id="gotobtn3">
+                <h2 class="area">開箱文章</h2>
+                <p class="area">想聽聽看別人的使用心得？ 那就來看看小編的使用心得！</p>
+                <div id="open" style="margin: 0 auto; width: 1000px;">
+                    <ul>
+                        <li><a href="#op1">電視開箱 - 索尼旗艦電視竟然萬元有找？</a></li>
+                        <li><a href="#op2">冰箱開箱 - 你越熱我越涼，日本原裝進口！</a></li>
+                        <li><a href="#op3">冷氣開箱 - 能注意到細節，才能算是專業</a></li>
+                    </ul>
+                    <div id="op1" style="margin: 0 auto; width: auto; height: 300px;overflow: auto;">
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                    </div>
+                    <div id="op2" style="margin: 0 auto; width: auto; height: 300px;overflow: auto;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra malesuada tellus, nec tempus sem ullamcorper at. Cras nec felis vel sapien fermentum auctor. Nulla mollis odio tellus, fermentum interdum leo lobortis id. Pellentesque sed magna sapien. Maecenas efficitur velit vitae feugiat bibendum. In gravida est ut quam tempus, at fringilla massa lobortis. Nullam volutpat laoreet tortor vitae tincidunt. Quisque lacinia orci vitae massa molestie, nec consectetur sapien consectetur. Vestibulum id ante in metus rhoncus tincidunt. Nunc sodales neque lacus, in hendrerit mi eleifend rutrum. Fusce magna arcu, commodo lobortis ipsum sed, imperdiet tempus velit. Nam metus nulla, bibendum a sapien sed, consectetur tempor leo. Integer a tempor dolor.
+                        Aenean diam leo, luctus a nisi sed, volutpat varius erat. Nam quis nibh tempor, fermentum elit ac, laoreet enim. Proin ut vehicula massa. Donec blandit rutrum ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus tincidunt nisi, nec laoreet felis dictum tempor. Quisque mollis quis urna aliquet semper. Integer risus lectus, placerat nec nibh id, maximus varius felis. Morbi id venenatis nisi. Vivamus scelerisque ligula dolor, id egestas tellus pellentesque vel. Sed sodales, lectus nec sollicitudin consectetur, massa nisi laoreet lectus, in ultricies dolor justo mollis est. Duis dignissim, sapien tristique posuere sagittis, sapien purus elementum eros, vitae dignissim nibh orci nec ipsum. Vivamus dolor lacus, pharetra id nisl vel, sollicitudin imperdiet elit. Aenean egestas, nibh vitae posuere facilisis, ex est porttitor nibh, nec lacinia leo purus sed nisi. Nam ornare nec justo vitae venenatis.
+                        Pellentesque bibendum felis augue, laoreet dapibus libero suscipit fringilla. Vestibulum lobortis enim est, et finibus tellus scelerisque vel. Phasellus non fringilla odio, id blandit nibh. Etiam non vulputate massa, ac tristique justo. Curabitur sed ante quis augue dapibus porta ut nec tellus. Morbi non tempor mi. Donec non felis non augue euismod feugiat. Donec rhoncus orci sit amet nibh egestas euismod. Ut pretium quam non lacus scelerisque, at elementum elit condimentum. Nulla finibus metus nec imperdiet dapibus. Donec eget tincidunt ex. Mauris condimentum luctus magna, nec porta mi mollis a. Mauris odio turpis, ullamcorper vel purus a, consequat ultricies mauris. Cras tincidunt orci vel leo egestas efficitur. Duis tristique vitae orci sed dictum. Integer vel ante tristique mauris blandit placerat vitae id mauris.
+                        Aliquam consectetur commodo dictum. Nunc id venenatis ligula. Integer euismod est sed aliquet vulputate. Nam dignissim, leo facilisis consectetur condimentum, magna diam pharetra lorem, in vestibulum metus lorem vitae urna. Ut feugiat enim metus, nec vestibulum mi tempus vel. Phasellus eget dui nec diam vehicula dictum. Ut ac felis non nisl ultricies vehicula vitae ac leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam consectetur vel eros sed posuere. Cras ullamcorper hendrerit lacus, sit amet aliquam mi tempus at. Donec rhoncus condimentum sapien sed pulvinar. Cras quis neque odio. Nulla ornare enim neque, quis fermentum risus luctus quis.
+                    </div>
+                    <div id="op3" style="margin: 0 auto; width: auto; height: 300px;overflow: auto;">
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                        摩爾說過一句富有哲理的話，有了老婆不愁孩，有了木匠不愁柴。這句話反映了問題的急切性。老舊的想法已經過時了。紀伯倫講過一段深奧的話，和你一同笑過的人，你可能把他忘掉; 但是一同和你哭過的人，你卻永遠不忘。帶著這句話，我們還要更加慎重的審視這個問題。電視可以說是有著成為常識的趨勢。這種事實對本人來說意義重大，相信對這個世界也是有一定意義的。培根曾說過一句意義深遠的話，既然習慣是人生的主宰，人們就應當努力求得好的習慣。習慣如果是在幼年就起始的，那就是最完美的習慣，這是一定的，這個我們叫做教育。教育其實是一種從早年就起始的習慣。這似乎解答了我的疑惑。斯邁爾斯曾經說過，我們從失敗中學到的東西要比在成功中學到的東西多得多。這句話把我們帶到了一個新的維度去思考這個問題。我們不得不面對一個非常尷尬的事實，那就是，儘管如此，別人往往卻不這麼想。若能夠洞悉電視各種層面的含義，勢必能讓思維再提高一個層級。懷特黑德在不經意間這樣說過，分析顯而易見的事情需要非凡的思想。這句話令我不禁感慨問題的迫切性。當前最急迫的事，想必就是釐清疑惑了。了解清楚電視到底是一種怎麼樣的存在，是解決一切問題的關鍵。世界需要改革，需要對電視有新的認知。電視的出現，必將帶領人類走向更高的巔峰。
+                    </div>
+                </div>
+            </div>
+            <!-- 老闆文章 -->
+            <div id="gotobtn4">
+                <h2 class="area">老闆日誌</h2>
+                <p class="area">老闆個人的事常生活分享，不定時會分享優惠資訊</p>
+            </div>
+            <div style="margin: 0 auto; width: 500px;">
+                <div class="fb-page" data-href="https://www.facebook.com/tpzc575" data-tabs="timeline" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tpzc575" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tpzc575">正昌電器行</a></blockquote></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 回到最上層 -->
+    <a href="#" class="gototop"></a>
+    
+    <!-- 底部 -->
+    <footer style="align-items: self-start">
+        <div>
+            <h4 style="border-bottom: 3px solid gray;">網站地圖</h4>
+            <ul style="list-style: none;">
+                <li><a href="about.html">關於ZC</a></li>
+                <li><a href="tv.html">電視</a></li>
+                <li><a href="refrigerator.html">冰箱</a></li>
+                <li><a href="airconditioner.html">冷氣</a></li>
+                <li><a href="washingmachine.html">洗衣機</a></li>
+                <li><a href="open.html">產品開箱</a></li>
+                <li><a href="yonknow.html">環境照</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="border-bottom: 3px solid gray;">聯絡資訊</h4>
+            <div>
+                <ul style="list-style: none;">
+                    <li>正昌電器股份有限公司</li>
+                    <br>
+                    <li><a href="https://www.google.com/maps/place/%E6%AD%A3%E6%98%8C%E9%9B%BB%E5%99%A8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/@24.1255939,120.71263,17z/data=!3m1!4b1!4m6!3m5!1s0x346922cd370b2a37:0x61930023608416f5!8m2!3d24.1255939!4d120.71263!16s%2Fg%2F1pzq_c3w7?authuser=0" target="_blank">台中市太平區太平路575號</a></li>
+                    <li>電話：(04) 2278-0639</li>
+                    <li>傳真：(04) 2260-7321</li>
+                    <li>營業時間：(一) ~ (六) 10:00 ~ 21:00</li>
+                    <br>
+                    <a href="https://www.facebook.com/tpzc575" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/julian880316/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://youtube.com/@raekuo880316" target="_blank" class="fa fa-youtube"></a>
+                </ul>  
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- JS -->
+<script src="JS/scam.js"></script>
+<script src="JS/slideshow.js"></script>
+<script src="JS/scrollsticky.js"></script>
+<script>
+    $( function() {
+        $('#open').tabs();
+    });
+</script>
+
+</html>
